@@ -1,0 +1,302 @@
+body {
+    margin: 0 auto;
+}
+
+div {
+    padding: 20px;
+}
+nav{
+    background-color: rgb(255, 245, 230);
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(96, 12, 12, 0.313);
+    width: 100%;
+
+}
+
+nav ul{
+    display: flex;
+    padding: 0 .5em;
+    
+}
+
+nav li{
+    margin-left: 20px;
+    list-style: none;
+    padding: 0 .5em;
+   
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color:brown;
+}
+
+nav img{
+    display: flex;
+    max-height: 150px;
+    width: auto;
+}
+#slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144, 52, 19);
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
+    color: white
+}
+#Recetario {
+    background-color: rgb(255, 245, 230);
+}
+#slogan_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144, 52, 19);
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
+    color: white
+}
+#Restaurantes {
+    background-color: rgb(255, 245, 230);
+}
+#contact_us{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: rgb(144, 52, 19);
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
+    color: white 
+}
+#Formulario {
+    display:flex;
+    justify-self: center;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: rgb(255, 245, 230);
+}
+
+#footer{
+    background-color: rgba(218, 130, 67, 0.66);
+    
+}
+
+.menu1{
+    background-color: rgba(218, 130, 67, 0.66);
+    margin: 0%;
+    padding: 0;
+    border: 0;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    /*justify-content: flex-end;
+    align-items: center; */
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    background-color: rgba(218, 130, 67, 0.66);
+}
+.logo_head{
+    background-color: rgba(218, 130, 67, 0.66);
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.opciones{
+    display: flex;
+    align-items: center;
+}
+.recetario{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+}
+.recetas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+}
+.restaurantes{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+}
+.restaurante_li{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+}
+.tipos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: rgba(218, 130, 67, 0.66);
+}
+.redes{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(218, 130, 67, 0.66);
+}
+.contact{
+    background-color: rgba(218, 130, 67, 0.66);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color: rgb(144, 52, 19);
+	color:#FFF;
+	border-radius:55px;
+	text-align:center;
+	box-shadow: 2px 2px 3px  rgba(218, 130, 67, 0.66);
+}
+.my-float{
+	margin-top:22px;
+}
+
+.card{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 15px;
+    background: linear-gradient(#fdcdb9, #fedeb4);
+    color: rgb(19, 41, 135);
+}
+.card_2{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 15px;
+    background: linear-gradient(#fdcdb9, #fedeb4);
+    color: rgb(19, 41, 135);
+}
+.card_3{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 15px;
+    background: linear-gradient(#fdcdb9, #fedeb4);
+    color: rgb(19, 41, 135);
+}
+.card_4{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 15px;
+    background: linear-gradient(#fdcdb9, #fedeb4);
+    color: rgb(19, 41, 135);
+}
+
+#about_us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144, 52, 19);
+    font-family: 'Kalam', cursive;
+    font-size: 25px;
+    color: white
+}
+#about{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    background-color: rgb(255, 245, 230);
+}
+
+.tipos{
+    display: flex;
+    justify-content: space-between;
+}
+.card_5{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 15px;
+    background: linear-gradient(#fdcdb9, #fedeb4);
+    color: rgb(19, 41, 135);
+}
+.card_6{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 15px;
+    background: linear-gradient(#fdcdb9, #fedeb4);
+    color: rgb(19, 41, 135);
+}
+.card_7{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 15px;
+    background: linear-gradient(#fdcdb9, #fedeb4);
+    color: rgb(19, 41, 135);
+}
+
+.card_8{
+    font-family:'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 15px;
+    background: linear-gradient(#fdcdb9, #fedeb4);
+    color: rgb(19, 41, 135);
+}
