@@ -2,6 +2,12 @@
     --primary: rgb(255, 245, 230);
     --font_color: black;
     --brown: rgb(144, 52, 19);
+    --footer: rgb(218, 130, 67, 0.66);
+    
+}
+*{
+    box-sizing: border-box;
+    
 }
 
 body {
@@ -14,18 +20,19 @@ div {
 
 /*inicio navs*/
 #nav{
-    background-color: var(--primary);
     display: flex;
-    flex-direction: row;
-    border-radius: 15px;
+    margin: 100%;
+    background-color: var(--footer);
     margin: 0 auto;
     width: 100%;
 }
-#nav2{
-    background-color:var(--primary);
-    width: 100%;
-
+.navbar{
+    background-color: var(--primary);
+    border-radius: 15px;
+    box-sizing: content-box;
+    margin: 0 auto;
 }
+
 nav ul{
     display: flex;
     padding: 0 .5em;
@@ -35,8 +42,7 @@ nav ul{
 nav li{
     margin-left: 20px;
     list-style: none;
-    padding: 0 .5em;
-   
+    padding: 20px;
 }
 
 nav a{
@@ -45,16 +51,13 @@ nav a{
 }
 
 nav a:hover{
-    color: --brown;
+    color: brown;
 }
 
-nav img{
-    display: flex;
-    max-height: 150px;
-    width: auto;
-}
+
 /*fin navs*/
 
+/*inicio slider*/
 .slider{
     background-image: url(./assets/imagenes/slider.jpg);
     background-position: center;
@@ -73,6 +76,15 @@ nav img{
     background-color: rgba(250, 217, 167, 0.247);
     z-index: -1; 
 }
+.food_talk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 65px;
+    color: white 
+}
 .slogan {
     display: flex;
     justify-content: center;
@@ -82,6 +94,9 @@ nav img{
     font-size: 35px;
     color: white
 }
+/*fin slider*/
+
+/*inicio about us*/
 #about_us{
     display: flex;
     justify-content: flex-start;
@@ -91,103 +106,49 @@ nav img{
     font-size: 25px;
     color: white
 }
-#about{
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 18px;
-    background-color: rgb(255, 245, 230);
-}
-.team_member img{
-    border-radius: 150px;
-    width: 125%;
-    height: 125%;
-    object-fit: cover;  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: none;
-}
-.team_member{
+.profiles{
+    height: 100%;
+    width: 100%;
+    background: var(--primary);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 18px;
 }
-.equipo{
-    display: flex;
-    justify-content: space-around  
+.profiles .ppal img{
+    width: 580px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
 }
-.food_talk{
+.all-text{
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+.ppal{
+    width: 1290px;
+    max-width: 95%;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    background-color: none;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 65px;
-    color: white  
+    justify-content: space-around;
 }
+.all-text p{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    color: var(--font_color);
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+/*fin about us*/
+
+/*inicio recetario*/
+
 #Recetario {
     background-color: var(--primary);
 }
-#res_titulo{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color:var(--brown);
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 25px;
-    color: white
-}
-
-#contact_us{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    background-color: var(--brown);
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 25px;
-    color: white 
-}
-#Formulario {
-    display:flex;
-    justify-self: center;
-    font-family: 'Noto Sans', sans-serif;
-    background-color: rgb(255, 245, 230);
-}
-
-#footer{
-    background-color: rgba(218, 130, 67, 0.66);
-    
-}
-
-.menu1{
-    background-color: rgba(218, 130, 67, 0.66);
-    margin: 0%;
-    padding: 0;
-    border: 0;
-}
-.menu{
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: center; 
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    background-color: rgba(218, 130, 67, 0.66);
-}
-.logo_head{
-    background-color: rgba(218, 130, 67, 0.66);
-    display: flex;
-    justify-content: flex-start;
-    
-}
-.opciones{
-    display: flex;
-    align-items: center;
-}
-
-/*inicio recetario*/
 #rece_titulo{
     display: flex;
     justify-content: flex-start;
@@ -216,7 +177,6 @@ nav img{
     background: linear-gradient(rgba(255, 226, 207, 0.555),rgba(246, 190, 126, 0.7), rgba(218, 130, 67, 0.66));
     color: var(--font_color);
 }
-
 /*fin recetario*/
 
 /*inicio receta del día*/
@@ -228,9 +188,6 @@ nav img{
     font-family: 'Noto Sans', sans-serif;
     font-size: 25px;
     color: white
-}
-.cookie-style{
- 
 }
 .cookies-desc{
     font-family: 'Noto Sans', sans-serif;
@@ -253,6 +210,7 @@ nav img{
     background-attachment: fixed;
     position:relative;
     z-index: 2;
+    box-sizing: content-box;
 }
 .fondo2::after{
     content: '';
@@ -267,22 +225,30 @@ nav img{
 /*fin receta del día*/
 
 /*contacto*/
-.logo{
+#contact_us{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    background-color: rgba(218, 130, 67, 0.66);
-}
-.redes{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: center;
-    background-color: rgba(218, 130, 67, 0.66);
-}
-.contact{
-    background-color: rgba(218, 130, 67, 0.66);
+    background-color: var(--brown);
     font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    color: white 
+}
+#Formulario {
+    display:flex;
+    justify-self: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 19px;
+    background-color: rgb(255, 245, 230);
+}
+
+#Formulario input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
 }
 /*fin contacto*/
 
@@ -303,3 +269,50 @@ nav img{
 	margin-top:22px;
 }
 /*fin boton flotante*/
+
+/*inicio footer*/
+#footer{
+    background-color: rgba(218, 130, 67, 0.66);
+    
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: rgba(218, 130, 67, 0.66);
+}
+.redes{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(218, 130, 67, 0.66);
+}
+.contact{
+    background-color: rgba(218, 130, 67, 0.66);
+    font-family: 'Noto Sans', sans-serif;
+}
+/*fin footer*/
+
+/*ver si lo puedo poner*/
+.foodfondo{
+    background-image: url(./assets/imagenes/FOODTALKbckgrnd.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    position:relative;
+    z-index: 2;
+    box-sizing: content-box;
+   
+}
+.foodfondo::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 217, 167, 0.247);
+    z-index: -1; 
+}
