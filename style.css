@@ -30,6 +30,8 @@ div {
     border-radius: 15px;
     box-sizing: content-box;
     margin: 0 auto;
+    margin-top: -20px;
+    margin-bottom: -20px;
 }
 
 nav ul{
@@ -92,6 +94,10 @@ nav a:hover{
     font-family: 'Kalam', cursive;
     font-size: 35px;
     color: white
+}
+.btn-inicio{
+    border-radius: 55px;
+    
 }
 /*fin slider*/
 
@@ -173,7 +179,7 @@ nav a:hover{
     box-sizing: border-box;
     text-decoration: none;
     padding: 15px;
-    background: linear-gradient(var(--primary), rgba(255, 203, 144, 0.605), var(--footer));
+    background: linear-gradient(180deg, var(--primary) 5%, rgba(255, 203, 144, 0.605) 56%, var(--footer)) 100%;
     color: var(--font_color);
 }
 .card_container{
@@ -275,7 +281,7 @@ nav a:hover{
     transform: rotateY(-25deg);
     
 }
-.container .box:hover{
+.compras .box:hover{
     transform: rotateY(0deg) scale(1.25);
     z-index: 1;
     box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
@@ -336,7 +342,8 @@ nav a:hover{
 .compras .box:hover .content h2{
     transform: translateY(0px);
 }
-.compras .box:hover .content p{
+
+.compras .box .content p{
     color: white;
     transition: 0.5s;
     font-size: 14px;
@@ -392,37 +399,14 @@ nav a:hover{
 	box-shadow: 2px 2px 3px  rgba(218, 130, 67, 0.66);
 }
 .float i{
-   z-index: 1;
+   z-index: 3;
 }
 .my-float{
 	margin-top:22px;
 }
 /*fin boton flotante*/
 
-/*inicio footer
-#footer{
-    background-color: rgba(218, 130, 67, 0.66);
-    
-}
-.logo{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    background-color: rgba(218, 130, 67, 0.66);
-}
-.redes{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: center;
-    background-color: rgba(218, 130, 67, 0.66);
-}
-.contact{
-    background-color: rgba(218, 130, 67, 0.66);
-    font-family: 'Noto Sans', sans-serif;
-}
-fin footer*/
-
+/*Inicio footer */
 .footer-distributed{
 	background: var(--footer);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -440,7 +424,7 @@ fin footer*/
 }
 /* izq */
 .footer-distributed .footer-left{
-	width: 33%;
+	width: 30%;
 }
 .footer-distributed .footer-links a:before {
     content: "|";
@@ -454,7 +438,7 @@ fin footer*/
   .footer-distributed .footer-links .link-1:before {
     content: none;
   }
-/* Footer links de izq*/
+
 .footer-distributed .footer-links{
 	color: var(--font_color);
 	margin: 20px 0 12px;
@@ -468,13 +452,6 @@ fin footer*/
     font-size: 16px;
 	text-decoration: none;
 	color:  var(--font_color);
-}
-.footer-distributed .footer-company-name{
-	color:  #222;
-	font-size: 14px;
-	font-weight: normal;
-    font-family: 'Nunito', sans-serif;
-	margin: 0;
 }
 /*centro*/
 .footer-distributed .footer-center{
@@ -517,17 +494,115 @@ fin footer*/
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#33353d;
+  background-color:red;
 }
-.copyright-text
-{
-  margin:0
+
+
+
+/*footer NUEVA VERSION*/
+/*columna 1*/
+.footer2{
+    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+    background: var(--footer);
 }
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none;
+.footer2 img{
+    display: flex;
+    justify-content: center;
+}
+.footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 22px;
+    left: 0;
+    color: var(--font_color);
+    display: inline-block;
+    padding-right: 5px;
+  }
+  .footer2 .footer-links .link-1:before {
+    content: none;
+  }
+.footer2 .footer-links{
+	color: var(--font_color);
+	margin: 20px 0 12px;
+	padding: 0;
+}
+.footer2 .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+    font-family: 'Nunito', sans-serif;
+    font-weight:500;
+    font-size: 16px;
+	text-decoration: none;
+	color:  var(--font_color);
+}
+.copyright{
+    display: inline-block;
+	color: var(--font_color);
+    font-weight:500;
+    font-family: 'Nunito', sans-serif;
+	vertical-align: middle;
+	margin:0 auto;
+}
+
+/*columna 2 */
+.center-a .fa-phone{ 
+    background-color:  #33383b;
+	color: #ffffff;
+	font-size: 18px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.center-a .fa-map-marker{ 
+    background-color:  #33383b;
+	color: #ffffff;
+	font-size: 18px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.center-a .fa-envelope{ 
+    background-color:  #33383b;
+	color: #ffffff;
+	font-size: 18px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.footer-centerr p{
+	display: inline-block;
+	color: var(--font_color);
+    font-weight:500;
+    font-family: 'Nunito', sans-serif;
+	vertical-align: middle;
+	margin:0 auto;
+}
+/*columna 3 */
+.footer-right{
+    font-family: 'Nunito', sans-serif;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none;
 }
 .social-icons li
 {
@@ -578,25 +653,3 @@ fin footer*/
   color: white;
 }
 
-/*ver si lo puedo poner*/
-.foodfondo{
-    background-image: url(./assets/imagenes/FOODTALKbckgrnd.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: repeat-x;
-    position:relative;
-    z-index: 2;
-    box-sizing: content-box;
-   
-}
-.foodfondo::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(250, 217, 167, 0.247);
-    z-index: -1; 
-}
