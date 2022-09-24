@@ -163,27 +163,125 @@ nav a:hover{
     font-size: 25px;
     color: white
 }
-.recetas{
-    display:flex;
-    flex-direction: row;
+#Recetario {
+    background-color: var(--primary);
     font-family: 'Noto Sans', sans-serif;
-    font-size: 15px;
+}
+.recetas{
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: auto;
 }
-.card{
-    font-family:'Noto Sans', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
+.recetas .box{
+    position: relative;
+    width: 235px;
+    height: 375px;
+    background: var(--primary);
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-top: 45px;
+}
+.recetas:hover .box{
+    transform: rotateY(25deg);
+}
+.recetas .box:hover~.box{
+    transform: rotateY(-25deg);
+    
+}
+.recetas .box:hover{
+    transform: rotateY(0deg) scale(1.25);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+.recetas .box .imgBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.recetas .box .imgBox:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary), var(--footer));
+    z-index: 1;
+    opacity: 0;
+    transition: 0.3s;
+    mix-blend-mode: multiply;    
+}
+.recetas .box:hover .imgBox:before{
+    opacity: 1;
+}
+.recetas .box .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recetas .box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 9px;
+    align-items: flex-end;
     box-sizing: border-box;
-    text-decoration: none;
-    padding: 15px;
-    background: linear-gradient(180deg, var(--primary) 5%, rgba(255, 203, 144, 0.605) 56%, var(--footer)) 100%;
-    color: var(--font_color);
 }
-.card_container{
-    justify-content: space-evenly;
+.recetas .box .content h2{
+    color: white;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    transform: translateY(200px);
+    transition-delay: 0.3s;
+}
+.recetas .box:hover .content h2{
+    transform: translateY(0px);
+}
+
+.recetas .box .content p{
+    color: white;
+    transition: 0.5s;
+    font-size: 13px;
+    margin-bottom: 2px;
+    transform: translateY(200px);
+    transition-delay: 0.4s;
+    font-family: 'Nunito', sans-serif
+}
+.recetas .box:hover .content p{
+    transform: translateY(0px);
+}
+.recetas .box .content .btn_rece{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 15px;
+    transition: 0.5s;
+    transform: translateY(200px);
+    transition-delay: 0.5s;
+    
+}
+.recetas .box:hover .content .btn_rece{
+    transform: translateY(0px);
 }
 /*fin recetario*/
 
@@ -406,109 +504,21 @@ nav a:hover{
 }
 /*fin boton flotante*/
 
-/*Inicio footer */
-.footer-distributed{
-	background: var(--footer);
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 55px 50px;
-}
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
-/* izq */
-.footer-distributed .footer-left{
-	width: 30%;
-}
-.footer-distributed .footer-links a:before {
-    content: "|";
-    font-weight:300;
-    font-size: 22px;
-    left: 0;
-    color: var(--font_color);
-    display: inline-block;
-    padding-right: 5px;
-  }
-  .footer-distributed .footer-links .link-1:before {
-    content: none;
-  }
+/*footer*/
 
-.footer-distributed .footer-links{
-	color: var(--font_color);
-	margin: 20px 0 12px;
-	padding: 0;
-}
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-    font-family: 'Nunito', sans-serif;
-    font-weight:500;
-    font-size: 16px;
-	text-decoration: none;
-	color:  var(--font_color);
-}
-/*centro*/
-.footer-distributed .footer-center{
-	width: 33%;
-}
-.footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color: #ffffff;
-	font-size: 18px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
+.footer-left, .footer-right {
+    width: 25vw;
 }
 
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: var(--font_color);
-    font-weight:500;
-    font-family: 'Nunito', sans-serif;
-	vertical-align: middle;
-	margin:0 auto;
-}
-/* derecha*/
-.footer-distributed .footer-right{
-	width: 35%;
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:red;
-}
-
-
-
-/*footer NUEVA VERSION*/
 /*columna 1*/
-.footer2{
+.footer{
     grid-template-columns: auto auto auto;
     display: flex;
     justify-content: space-around;
     padding: 50px 0px;
     background: var(--footer);
 }
-.footer2 img{
+.footer img{
     display: flex;
     justify-content: center;
 }
@@ -521,15 +531,15 @@ nav a:hover{
     display: inline-block;
     padding-right: 5px;
   }
-  .footer2 .footer-links .link-1:before {
+  .footer .footer-links .link-1:before {
     content: none;
   }
-.footer2 .footer-links{
+.footer .footer-links{
 	color: var(--font_color);
 	margin: 20px 0 12px;
 	padding: 0;
 }
-.footer2 .footer-links a{
+.footer .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
     font-family: 'Nunito', sans-serif;
@@ -548,6 +558,17 @@ nav a:hover{
 }
 
 /*columna 2 */
+.center-a {
+    width: 35vw;
+}
+
+.center-a ul li {
+    display: flex;
+    align-items: center;
+}
+.center-a ul li p {
+    margin: auto 0;
+}
 .center-a .fa-phone{ 
     background-color:  #33383b;
 	color: #ffffff;
@@ -652,4 +673,3 @@ nav a:hover{
   background-color:#eb3d94;
   color: white;
 }
-

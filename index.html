@@ -50,7 +50,7 @@
                   <a class="nav-link" href="#about_us">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#Recetario">Recetas</a>
+                  <a class="nav-link" href="#rece_titulo">Recetas</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#rece-dia-t">Receta del día</a>
@@ -62,21 +62,21 @@
                 </li>
                 
               </ul>
-              <!--para el shop desp-->
+
               <button class="btn btn-outline-secondary ms-lg-3"><i class="fa-solid fa-user"> </i> Mi Cuenta</button>
             </div>
           </div>
         </nav>
       </div>
 
-      <!--separar!!-->
+      <!--texto principal-->
 
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-7 mx-auto text-center">
             <h1 class="food_talk">Food Talk</h1>
             <p class="slogan">Recetas simples para todos los días!</p><br>
-            <a href="#Recetario" class="btn btn-outline-light btn-inicio">Ver Recetas</a>
+            <a href="#rece_titulo" class="btn btn-outline-light btn-inicio">Ver Recetas</a>
             <a href="#shop" class="btn btn-outline-light btn-inicio">Ver Tienda</a>
             <a href="#contact_us" class="btn btn-outline-light btn-inicio">Contactanos</a>
             <br>
@@ -116,103 +116,108 @@
       </div>
     </section>
 
-    <!--Recetas--> 
-    <!--me falta det que las cards tengan todas el mismo tamaño ¿? mientras les puse a todas aprox la misma cantidad de texto para que parezcan de igual tamaño-->
+    <!--recetas-->    
     <section id="Recetario">
-      <div class="container-fluid padding">
-        <div class="row padding card_container">
-          <div class="col-md-3" style="width: 18rem; height: fit-content ;">
-            <div class="card shadow p-3 mb-5 bg-body rounded">
-              <img src="./assets/imagenes/breakfast.jpg" class="card-img-top" alt="img desayuno">
-              <div class="card-body">
-                <h5 class="card-title ">Desayunos</h5>
-                <p class="card-text">Los panqueques esponjosos más perfectos, huevos y bacon, o muffins recién salidos del horno. ¿Quién no ama el desayuno?</p>
-                <a href="#" class="btn btn-outline-light d-flex justify-content-center">Ver recetas</a>
+      <div class="container recetas">
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/breakfast.jpg" class="card-img-top" alt="img desayuno">
               </div>
-            </div>
-
-          </div>
-          <div class="col-md-3" style="width: 18rem; height: fit-content;">
-            <div class="card shadow p-3 mb-5 bg-body rounded" >
-              <img src="./assets/imagenes/cena.jpg" class="card-img-top" alt="img almuerzos y cenas">
-              <div class="card-body">
-                <h5 class="card-title">Almuerzos y Cenas</h5>
-                <p class="card-text">"¿Que puedo almorzar hoy?", "¿Que hay para cenar?"... <br>¡Esa pregunta!, vamos a ayudarlo a obtener la respuesta.</p>
-                <a href="#" class="btn btn-outline-light d-flex justify-content-center">Ver recetas</a>
+              <div class="content">
+                <div>
+                  <h2>Desayunos</h2>
+                  <p class="desc">Los panqueques esponjosos más perfectos, huevos y bacon, o muffins recién salidos del horno. ¿Quién no ama el desayuno?</p>
+                  <a href="#" class="btn_rece btn btn-outline-light">Ver recetas</a>
+                </div>
               </div>
-            </div>
           </div>
-
-          <div class="col-md-3" style="width: 18rem;">
-            <div class="card shadow p-3 mb-5 bg-body rounded" >
-              <img src="./assets/imagenes/sandwich.jpg" class="card-img-top" alt="img Sandwiches">
-              <div class="card-body">
-                <h5 class="card-title">Sandwiches</h5>
-                <p class="card-text">Una alternativa que sirve en todo momento, para el desayuno, al mediodía, a la tarde, o para el bajón de la noche! Estos sandwiches nunca fallan.</p>
-                <a href="#" class="btn btn-outline-light d-flex justify-content-center">Ver recetas</a>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/cena.jpg" class="card-img-top" alt="img almuerzos y cenas">
               </div>
-            </div>
-          </div>
-
-          <div class="col-md-3" style="width: 18rem;">
-            <div class="card shadow p-3 mb-5 bg-body rounded" >
-              <img src="./assets/imagenes/dulce.jpg" class="card-img-top" alt="img dulces">
-              <div class="card-body">
-                <h5 class="card-title">Dulces</h5>
-                <p class="card-text">Recetas dulces para cada momento del día! No estamos cenando solo para llegar al postre pero, por si acaso... Aquí hay algunas ideas!</p>
-                <a href="#" class="btn btn-outline-light d-flex justify-content-center">Ver recetas</a>
+              <div class="content">
+                <div>
+                  <h2>Almuerzos y Cenas</h2>
+                  <p class="desc">"¿Que puedo almorzar hoy?", "¿Que hay para cenar?"... <br>¡Ay esa pregunta!, vamos a ayudarlo a obtener la respuesta.</p>
+                  <a href="#" class="btn_rece btn btn-outline-light">Ver recetas</a>
+                </div>
               </div>
-            </div>
           </div>
-   
-          <div class="col-md-4" style="width: 18rem;">
-            <div class="card shadow p-3 mb-5 bg-body rounded" >
-              <img src="./assets/imagenes/mexican.jpg" class="card-img-top" alt="img comida mexicana">
-              <div class="card-body">
-                <h5 class="card-title">Comida Mexicana</h5>
-                <p class="card-text">Estas recetas son un conjunto de platos y técnicas de México, que forman parte de las tradiciones y vida común de sus habitantes.</p>
-                <a href="#" class="btn btn-outline-light d-flex justify-content-center">Ver recetas</a>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/sandwich.jpg" class="card-img-top" alt="img Sandwiches">
               </div>
-            </div>
-          </div>
-
-          <div class="col-md-4" style="width: 18rem;">
-            <div class="card shadow p-3 mb-5 bg-body rounded" >
-              <img src="./assets/imagenes/oriental.jpg" class="card-img-top" alt="img comida mexicana">
-              <div class="card-body">
-                <h5 class="card-title">Comida Oriental</h5>
-                <p class="card-text">Recetas de todo tipo de comida oriental/asiática. Ya sean woks, sushi, ramen, dumplings, baozis, pad thai, sopas de mariscos, etc.</p>
-                <a href="#" class="btn btn-outline-light d-flex justify-content-center">Ver recetas</a>
+              <div class="content">
+                <div>
+                  <h2>Sandwiches</h2>
+                  <p class="desc">Una opción que sirve en todo momento, para el desayuno, al mediodía, a la tarde, o para el bajón de la noche! Estos sandwiches nunca fallan.</p>
+                  <a href="#" class="btn_rece btn btn-outline-light">Ver recetas</a>
+                </div>
               </div>
-            </div>
           </div>
-
-          <div class="col-md-4" style="width: 18rem;">
-            <div class="card shadow p-3 mb-5 bg-body rounded" >
-              <img src="./assets/imagenes/aperitivos.jpg" class="card-img-top" alt="img Aperitivos">
-              <div class="card-body">
-                <h5 class="card-title">Aperitivos</h5>
-                <p class="card-text">Aquí puedes encontrar decenas de recetas para empezar tu comida de forma memorable. Recetas perfectas para deleitar tu paladar.</p>
-                <a href="#" class="btn btn-outline-light d-flex justify-content-center">Ver recetas</a>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/dulce.jpg" class="card-img-top" alt="img dulces">
               </div>
-            </div>
-          </div>
-
-          <div class="col-md-4" style="width: 18rem;">
-            <div class="card shadow p-3 mb-5 bg-body rounded" >
-              <img src="./assets/imagenes/ensalada.jpg" class="card-img-top" alt="img dulces">
-              <div class="card-body">
-                <h5 class="card-title">Ensaladas</h5>
-                <p class="card-text">Docenas de ensaladas frescas, saludables y ricas. Porque alimentarse bien debería disfrutarse al igual que cualquier otra comida!</p>
-                <a href="#" class="btn btn-outline-light d-flex justify-content-center">Ver recetas</a>
+              <div class="content">
+                <div>
+                  <h2>Dulces</h2>
+                  <p class="desc">Recetas dulces para cada momento del día! No estamos cenando solo para llegar al postre pero, por si acaso... Aquí hay algunas ideas!</p>
+                  <a href="#" class="btn_rece btn btn-outline-light">Ver recetas</a>
+                </div>
               </div>
-            </div>
           </div>
-
-        </div>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/mexican.jpg" class="card-img-top" alt="img comida mexicana">
+              </div>
+              <div class="content">
+                <div>
+                  <h2>Comida Mexicana</h2>
+                  <p class="desc">Estas recetas son un conjunto de platos y técnicas de México, que forman parte de las tradiciones y vida común de sus habitantes.</p>
+                  <a href="#" class="btn_rece btn btn-outline-light">Ver recetas</a>
+                </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/oriental.jpg" class="card-img-top" alt="img comida mexicana">
+              </div>
+              <div class="content">
+                <div>
+                  <h2>Comida Oriental</h2>
+                  <p class="desc">Recetas de todo tipo de comida oriental/asiática. Ya sean woks, sushi, ramen, dumplings, baozis, pad thai, sopas de mariscos, etc.</p>
+                  <a href="#" class="btn_rece btn btn-outline-light">Ver recetas</a>
+                </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/aperitivos.jpg" class="card-img-top" alt="img Aperitivos">
+              </div>
+              <div class="content">
+                <div>
+                  <h2>Aperitivos</h2>
+                  <p class="desc">Aquí puedes encontrar decenas de recetas para empezar tu comida de forma memorable. Recetas perfectas para deleitar tu paladar.</p>
+                  <a href="#" class="btn_rece btn btn-outline-light ">Ver recetas</a>
+                </div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="imgBox">
+                  <img src="./assets/imagenes/ensalada.jpg" class="card-img-top" alt="img dulces">
+              </div>
+              <div class="content">
+                <div>
+                  <h2>Ensaladas</h2>
+                  <p class="desc">Docenas de ensaladas frescas, saludables y ricas. Porque alimentarse bien debería disfrutarse al igual que cualquier otra comida!</p>
+                  <a href="#" class="btn_rece btn btn-outline-light">Ver recetas</a>
+                </div>
+              </div>
+          </div>
       </div>
-    </section>
-    
+  </section>
+
     <!--Receta del día-->
     <section id="rece-dia-t">
       <div class="container">
@@ -220,11 +225,12 @@
       </div>
     </section>
     
+   
     <div class="fondo2 vh-100 ">
       <div class="container-fluid padding">
         <div class="row padding">
           <div class="cookie-style  mx-auto">
-            <!--no lo puedo alinear a la izq-->
+            
             <h3 class="cookies-desc text-left"><strong>Cookies con Chips de Chocolate</strong></h3>
             <p class="cookies-desc2 text-align">
               ¡Esta es la mejor receta de Cookies con chips de chocolate! 
@@ -311,7 +317,7 @@
               <p class="desc">Ingredientes naturales y súper saludables para darle sabor a tus comidas.</p>
             </div>
           </div>
-      </div>
+        </div>
       <div class="box">
         <div class="imgBox">
           <img src="./assets/imagenes/clase_virtual.jpg">
@@ -319,7 +325,7 @@
         <div class="content">
           <div>
             <h2>Cociná con nosotros</h2>
-            <p class="desc">Variedad de clases virtuales para que aprendas ríqisimas recetas desde tu casa!</p>
+            <p class="desc">Variedad de clases virtuales para que aprendas ríqisimas recetas desde la comodidad de tu casa!</p>
           </div>
         </div>
       </div>
@@ -352,7 +358,7 @@
         <div class="content">
           <div>
             <h2>Experiencias</h2>
-            <p class="desc">Te ofrecemos una variedad de experiencias, desde clases de pareja hasta comidas en restaurantes lujosos.</p>
+            <p class="desc">Te ofrecemos una variedad de experiencias, desde clases de cocina en pareja, hasta comidas en restaurantes lujosos.</p>
           </div>
         </div>
       </div>
@@ -397,7 +403,7 @@
             </div>
           </div>
           <!--fin formulario-->
-          <!--inicio carousel --- no puedo hacer que se pasen solos los videos-->
+          <!--inicio carousel-->
           <div class="col">
             <div id="carousel" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel" >
               <div class="carousel-inner ">
@@ -443,67 +449,8 @@
   <i class="fa-solid fa-arrow-up my-float"></i>
   </a>
 
-  <!--Footer viejo
-  <footer class="footer-distributed">
-    <div class="footer-left">
-      <div class="logo">
-        <img class="footer_logo"
-        src="./assets/imagenes/Food_talk_logo.png" 
-        alt="Logo Food Talk"
-        width="200"
-        height="200">
-      </div>
-      <p class="footer-links">
-        <a href="#nav" class="link-1">Inicio</a>
-        <a href="#about_us">About</a>    
-        <a href="#Recetario">Recetas</a>          
-        <a href="#shop">Shop</a>      
-        <a href="#contact_us">Contact</a>
-      </p>
-      <p class="footer-company-name">© 2022 Food Talk - All Rights Reserved.</p>
-    </div>
-    
-
-    <div class="footer-centerr">
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <p>Adress: 123 street, Bs. As.</p>
-      </div>
-      <div>
-        <i class="fa fa-phone"></i>
-        <p>Tel: 011 1234-5678</p>
-      </div>
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p><a>Email: foodtalk@gmail.com</a></p>
-      </div>
-      <ul class="social-icons">
-            <li><a class="insta" href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>  
-      </ul>
-    </div>
-        
-    <div class="footer-right">
-      
-      <div class="col-4 offset-1">
-        <form>
-          <h5>Suscribite para no perderte ninguna receta!</h5>
-          <p>Nuevas recetas todas las semanas para mejorar tus comidas.</p>
-          <div class="d-flex w-100 gap-2">
-            <label for="newsletter1" class="visually-hidden">Email address</label>
-            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-            <button class="btn btn-outline-light" type="button">Subscribe</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </footer>
-  -->
-
-  <!--footer nueva version-->
-  <footer class="footer2">
+  <!--footer-->
+  <footer class="footer">
     <article class="footer-left">
       <img class="footer_logo"
         src="./assets/imagenes/Food_talk_logo.png" 
@@ -513,7 +460,7 @@
       <p class="footer-links">
         <a href="#nav" class="link-1">Inicio</a>
         <a href="#about_us">About</a>    
-        <a href="#Recetario">Recetas</a>          
+        <a href="#rece_titulo">Recetas</a>          
         <a href="#shop">Shop</a>      
         <a href="#contact_us">Contact</a>
       </p>
@@ -521,21 +468,26 @@
     </article>
 
     <article class="center-a">
-      <i class="fa fa-map-marker"></i>
-      <p>Adress: 123 street, Bs. As.</p>
-
-      <i class="fa fa-phone"></i>
-      <p>Tel: 011 1234-5678</p>
-    
-      <i class="fa fa-envelope"></i>
-      <p><a>Email: foodtalk@gmail.com</a></p>
-         
+      <ul>
+        <li>
+          <i class="fa fa-map-marker"></i>
+          <p>Adress: 123 street, Bs. As.</p>
+        </li>
+        <li>
+          <i class="fa fa-phone"></i>
+          <p>Tel: 011 1234-5678</p>
+        </li>
+        <li>
+          <i class="fa fa-envelope"></i>
+          <p><a>Email: foodtalk@gmail.com</a></p>
+        </li>
+      </ul>         
     </article>
 
     <article class="footer-right">
       <form>
         <h5><strong>Suscribite para no perderte ninguna receta!</strong></h5>
-        <p>Nuevas recetas todas las semanas para mejorar tus comidas.</p>
+        <p>Nuevas recetas todas las semanas.</p>
         <div class="d-flex w-100 gap-2">
           <label for="newsletter1" class="visually-hidden footer-email">Email address</label>
           <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
